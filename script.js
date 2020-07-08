@@ -19,7 +19,7 @@ $(function(){
     $('.why').click(function(){
         if($(this).hasClass('done')){
 
-        $exp.fadeOut(1000);
+        $exp.fadeOut(500);
         $(this).removeClass('done');
 
     }else{
@@ -31,14 +31,16 @@ $(function(){
     $('#listContainer').click(function(){
         if($ableList.hasClass('done')){
             $AList.addClass('reList')
-            $ableList.fadeOut(1000);
+            $ableList.fadeOut(500);
             $AList.removeClass('list');
             $ableList.removeClass('done');
+            $('#listContainer').text("リストを開ける");
         }else{
             $AList.removeClass('reList');
             $ableList.fadeIn(1000);
             $AList.addClass('list');
             $ableList.addClass('done');
+            $('#listContainer').text("リストを閉じる");
         };
     })
 });

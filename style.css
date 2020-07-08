@@ -111,6 +111,8 @@ ul{
 /**また、それぞれのclass,idで役割を別にメモしてあります。**/
 html{
   font-size: 30px;
+  background-image: url("BackImage.jpg");
+  background-size: cover;
 }
 
 @keyframes load{
@@ -220,7 +222,7 @@ main{
   z-index: 0;
 }
 .headerParts{
-  padding: 0 3rem;
+  padding: 0 2rem;
   padding-top: 1rem;
 }
 .headerParts a{
@@ -252,14 +254,14 @@ main{
   display: none;
   margin: 0.8rem 0.2rem;
   padding: 0.3rem 0.3rem;
-  background-color: #000;
+  background-color: #555;
   color: #fff;
   border-radius: 0.2rem;
 }
 .ALists{
   height: 0.2rem;
   width: 0%;
-  border-bottom: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #888;
 }
 .list{
   animation-name: list;
@@ -275,11 +277,11 @@ main{
 @keyframes list{
   0%{
     width: 0%;
-    border-bottom: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #888;
   }
   100%{
     width: 100%;
-    border-bottom: 0.2rem solid #888; 
+    border-bottom: 0.2rem solid #333; 
   }
 }
 
@@ -288,13 +290,6 @@ main{
   font-size: 0.7rem;
   padding: 0.15rem;
   height: 1rem;
-}
-#beforeContain{
-  height: 100%;
-  font-size: 0.5rem;
-  margin-right: 0.2rem;
-  color: #333;
-  font-weight: 900;
 }
 
 
