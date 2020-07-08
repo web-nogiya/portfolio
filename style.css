@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+ul{
+  list-style: none;
+}
+
+/**CSSリセット**/
+/**汚いコードに見えるかもしれませんが、こんなコードでもメンテナンスをすることができます。**/
+/**また、それぞれのclass,idで役割を別にメモしてあります。**/
+html{
+  font-size: 30px;
+}
+
+@keyframes load{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    display: none;
+    z-index: 0;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.loader{
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    font-family: fantasy;
+    background-color: #000;
+    color: #fff;
+    z-index: 10;
+}
+
+
+
+.headerContents{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  font-size: 0.8rem;
+}
+
+.topWrapper{
+  height: 90%;
+  width: 100%;
+}
+.topContents{
+  height: 50%;
+  padding: 12% 15%;
+  font-size: 1rem;
+  text-align: center;
+}
+.topContents h2{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.3rem;
+}
+.why{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background-color: #555;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  position: relative;
+}
+
+@keyframes hover{
+  0%{ 
+  }
+  100%{
+    background-color: #000;
+  }
+
+}
+.hover{
+  animation-name:hover;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.ansExplain{
+  display: none;
+  font-size: 0.7rem;
+  color: #666;
+  line-height: 1.2em;
+}
+main{
+  position: relative;
+  z-index: 0;
+}
+.headerParts{
+  padding: 0 3rem;
+  padding-top: 1rem;
+}
+.headerParts a{
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+
+.mainContents{
+  width: 80%;
+  margin: 2.5rem 10%;
+  font-family: "Noto Sans JP",Arial, Helvetica, sans-serif;
+}
+
+.mainParts{
+  padding: 2.5rem;
+  margin-top: -2.5rem;
+  font-size: 0.7rem;
+}
+.mainParts h2{
+  display: inline-block;
+  margin: 1rem;
+  border-bottom: 1px solid #000;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.ableList{
+  display: none;
+  margin: 0.8rem 0.2rem;
+  padding: 0.3rem 0.3rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.2rem;
+}
+.ALists{
+  height: 0.2rem;
+  width: 0%;
+  border-bottom: 0.1rem solid #000;
+}
+.list{
+  animation-name: list;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.reList{
+  animation-name: list;
+  animation-direction: reverse;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes list{
+  0%{
+    width: 0%;
+    border-bottom: 0.1rem solid #000;
+  }
+  100%{
+    width: 100%;
+    border-bottom: 0.2rem solid #888; 
+  }
+}
+
+#listContainer{
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.15rem;
+  height: 1rem;
+}
+#beforeContain{
+  height: 100%;
+  font-size: 0.5rem;
+  margin-right: 0.2rem;
+  color: #333;
+  font-weight: 900;
+}
+
+
+#LP{
+  width: 90%;
+}
+
+#support{
+  width: 80%;
+}
+
+#animation{
+  width: 65%;
+}
+
+#responsive{
+  width: 45%;
+}
+
+.attention{
+  font-size: 0.5rem;
+  color: #666;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
